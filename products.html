@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品 - Blueice工作室</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Blueice</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active">产品</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于</a>
+                </li>
+                <li class="nav-item">
+                    <a href="join.html" class="nav-link">加入我们</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>我们的产品</h1>
+            <p>探索我们创新的技术解决方案</p>
+        </div>
+    </header>
+
+    <!-- 主内容 -->
+    <main class="products">
+        <div class="container">
+            <!-- 产品详情卡片 -->
+            <div class="product-detail-card animate-on-scroll">
+                <div class="product-detail-image">
+                    <img src="images/os-preview.png" alt="BlueiceOS 预览">
+                </div>
+                <div class="product-detail-info">
+                    <h2>BlueiceOS</h2>
+                    <p class="product-description">
+                        BlueiceOS 是我们自主研发的下一代操作系统，专为现代计算需求设计。
+                        它结合了卓越的性能、安全性和用户友好的界面，为用户提供无与伦比的计算体验。
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>核心特性</h3>
+                        <ul>
+                            <li><i class="fas fa-microchip"></i> 高性能内核</li>
+                            <li><i class="fas fa-shield-alt"></i> 内置安全防护</li>
+                            <li><i class="fas fa-bolt"></i> 极速启动</li>
+                            <li><i class="fas fa-sync-alt"></i> 无缝更新</li>
+                            <li><i class="fas fa-plug"></i> 广泛硬件兼容</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="development-progress">
+                        <h3>开发进度</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%">开发进度: 65%</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <a href="#" class="btn btn-primary">下载试用</a>
+                        <a href="#" class="btn btn-secondary">技术文档</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 产品特性详情 -->
+            <div class="product-features-detail">
+                <h2 class="section-title animate-on-scroll">产品特性详解</h2>
+                
+                <div class="feature-cards">
+                    <div class="feature-card animate-on-scroll" data-delay="0">
+                        <div class="feature-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Blueice内核</h3>
+                        <p>自主研发的高性能内核，优化资源管理，提供卓越的系统响应速度和稳定性。</p>
+                    </div>
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>UEFI引导</h3>
+                        <p>采用现代化UEFI引导技术，提供更快的启动速度和更强的安全性保障。</p>
+                    </div>
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>智能资源管理</h3>
+                        <p>先进的资源调度算法，智能分配系统资源，确保关键应用始终流畅运行。</p>
+                    </div>
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>多层安全防护</h3>
+                        <p>从硬件到应用的全栈安全解决方案，保护用户数据和隐私安全。</p>
+                    </div>
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>现代化界面</h3>
+                        <p>简洁美观的用户界面设计，提供直观易用的操作体验。</p>
+                    </div>
+                    
+                    <div class="feature-card animate-on-scroll" data-delay="500">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>云端集成</h3>
+                        <p>无缝集成云服务，支持跨设备数据同步和备份。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Blueice工作室</h3>
+                    <p>我们致力于创造创新的技术解决方案，推动科技发展，为用户提供卓越的产品和服务。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品</a></li>
+                        <li><a href="news.html">新闻</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="join.html">加入我们</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hhfjhfuhj@outlook.com</li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/SYSTEM-WIN-ZDY/blueice">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Blueice工作室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

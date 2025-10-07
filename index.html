@@ -5,77 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blueice工作室 | BLUEICE Studio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">BLUEICE 工作室</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#products">产品与服务</a></li>
-                    <li><a href="#news">近期新闻</a></li>
-                    <li><a href="#about">关于我们</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>BLUEICE 工作室 5 周年</h2>
-            <p>庆祝活动已圆满结束</p>
-            <p>我们的产品及服务</p>
-        </div>
-    </section>
-
-    <section id="products" class="products">
-        <div class="container">
-            <h2>操作系统</h2>
-            <div class="product-item">
-                <h3>BlueiceOS操作系统</h3>
-                <p>完全自主研发，内核使用Blueice-Kernel 1.0，UEFI引导方式，安全、可靠</p>
-                <a href="#" class="btn">了解更多</a>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>BLUEICE</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link">产品</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于</a>
+                </li>
+                <li class="nav-item">
+                    <a href="join.html" class="nav-link">加入我们</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section id="news" class="news">
-        <div class="container">
-            <h2>近期新闻</h2>
-            <div class="news-item">
-                <h3>BDC2024 圆满结束</h3>
-                <p>由于各项目开发进度落后于原计划、发布形式变更等原因，且为了留出足够时间用于打磨项目以给大家提供更完美稳定的产品（同时防止某些喷子因为BDC与项目正式发布日期不同步而喷人），经过商议，我们决定将BDC2024提前至5月15日于线上举行（这是废话）。</p>
-                <p>各位的支持就是我们更新的最大动力！希望大家能谅解！</p>
+    <!-- 主页内容 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">BLUEICE 工作室</h1>
+                <p class="hero-subtitle animate-fade-in-delay">创新不了科技，塑造不了未来</p>
+                <div class="hero-buttons animate-fade-in-delay-2">
+                    <a href="products.html" class="btn btn-primary">了解产品</a>
+                    <a href="join.html" class="btn btn-secondary">加入我们</a>
+                </div>
             </div>
-            <div class="news-item">
-                <h3>没有更多了</h3>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>我们有什么优势？</h2>
-            <div class="advantage">
-                <h3>学生团队，低成本优势</h3>
-                <p>BLUEICE工作室在2019年创立。由于我们都是学生，也就不需要支付大量工资费用，产品价格也大大降低。</p>
+        <!-- 特色卡片 -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">我们的特色</h2>
+                <div class="feature-cards">
+                    <div class="feature-card animate-on-scroll" data-delay="0">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>自主研发</h3>
+                        <p>完全自主研发的操作系统内核，采用现代化架构设计，为未来计算需求提供坚实基础。</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" data-delay="150">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>安全保障</h3>
+                        <p>多层次安全防护体系，从硬件到应用全方位保护用户数据和隐私安全。</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll" data-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>性能卓越</h3>
+                        <p>优化的系统架构和智能资源管理，确保系统运行流畅稳定，响应迅速。</p>
+                    </div>
+                </div>
             </div>
-            <div class="advantage">
-                <h3>品质保证</h3>
-                <p>在价格降低的同时，品质也不输大厂。我们保证我们的产品即便是免费的，也校验过每一项功能。即便我们没有校验出所有的问题，也会第一时间受理并修复任何人的报告。</p>
-            </div>
-            <div class="advantage">
-                <h3>技术创新</h3>
-                <p>我们的技术也堪比大厂，例如我们发明的BRMU锁存器速度高达320Gbps！双通道更是高达640Tbps！遥遥领先DDR5！</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <!-- 产品预览 -->
+        <section class="products-preview">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">我们的产品</h2>
+                <div class="product-card animate-on-scroll" data-delay="200">
+                    <div class="product-image">
+                        <img src="images/os-preview.png" alt="BlueiceOS">
+                    </div>
+                    <div class="product-info">
+                        <h3>BlueiceOS</h3>
+                        <p>新一代操作系统，专为现代计算需求设计，提供卓越的用户体验和安全保障。</p>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%">开发进度: 65%</div>
+                            </div>
+                        </div>
+                        <a href="products.html" class="btn btn-primary">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新闻预览 -->
+        <section class="news-preview">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">最新动态</h2>
+                <div class="news-cards">
+                    <div class="news-card animate-on-scroll" data-delay="0">
+                        <div class="news-image">
+                            <img src="images/os-preview.png" alt="Blueice工作室成立">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">2025.10.03</div>
+                            <h3>Blueice工作室成立</h3>
+                            <p>BLUEICE工作室正式成立，致力于操作系统研发，为用户提供创新的技术解决方案。</p>
+                            <a href="news.html" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                    <div class="news-card animate-on-scroll" data-delay="150">
+                        <div class="news-image">
+                            <img src="images/os-preview.png" alt="BlueiceOS开发启动">
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">2025.10.05</div>
+                            <h3>BlueiceOS开发启动</h3>
+                            <p>BlueiceOS操作系统开发正式启动，标志着我们在系统软件领域迈出了重要一步。</p>
+                            <a href="news.html" class="read-more">阅读更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 BLUEICE工作室. 保留所有权利.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BLUEICE 工作室</h3>
+                    <p>创新不了科技，塑造不了未来</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品</a></li>
+                        <li><a href="news.html">新闻</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="join.html">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hhfjhfuhj@outlook.com</li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/SYSTEM-WIN-ZDY/blueice">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BLUEICE STUDIO. 保留所有权利.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
